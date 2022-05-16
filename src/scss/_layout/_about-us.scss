@@ -1,0 +1,65 @@
+.about-us {
+    overflow: hidden;
+    position: relative;
+    padding: 3rem 0;
+
+    @include media-breakpoint-up(md) {
+        padding: 5rem 0;
+    }
+
+    &__content {
+        margin-top: 1rem;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 0;
+        }
+
+        .heading {
+            text-align: center;
+
+            @include media-breakpoint-up(md) {
+                text-align: left;
+            }
+        }
+    }
+
+    &__image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        &::after {
+            content: '';
+            background-color: $primary-lighter;
+            border: 40px solid $primary-lightest;
+            position: absolute;
+            border-radius: 50%;
+            top: 50%;
+            left: 20%;
+            transform: translate(calc(-50%), -50%);
+            width: 350px;
+            height: 350px;
+            z-index: 1;
+        }
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            left: 20%;
+            background-color: $primary-lightest;
+            height: 120%;
+            width: 140px;
+            transform: translateX(calc(-50% - 70px)) skewX(-40deg);
+            box-shadow: 180px 0 0 0 $primary-lightest; 
+            z-index: 1;   
+        }
+    }
+}

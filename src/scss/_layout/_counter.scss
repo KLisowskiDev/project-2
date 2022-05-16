@@ -1,0 +1,30 @@
+.counter {
+    background-color: $heading-color;
+    background-image: url('../images/subheader/subheader-1.jpg');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 3rem 0;
+
+    &__row {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__icon {
+        color: $primary;
+        font-size: 3rem;
+        margin-top: 1.5rem;
+    }
+
+    &__value {
+        color: $white;
+        display: block;
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,63 @@
+//  colors
+$white: #ffffff;
+$primary: #fb0346;
+$primary-lightest: #fee0e8;
+$primary-lighter: #fecedc;
+$primary-light: #ea2359;
+$primary-opacity: rgba(251, 3, 70, 0.8);
+$primary-opacity-lighter: rgba(251, 3, 70, 0.5);
+$color-accent: #000;
+$color-light: #f0f0f0;
+$color-dark: #000;
+$color-button-dark: #141112;
+$color-pricing-box-lightest: #fc2962;
+$color-pricing-box-lighter: #fc4979;
+$color-pricing-box-light: #fc648d;
+$slider-arrow-color: #d9d9d9;
+$testimonials-quote-color: #fecdda;
+$footer-social-icon-background-color: #ebebeb;
+$footer-border-color: #cacaca;
+
+$split-background-primary: rgba(251, 3, 70, 0.5);
+$split-background-dark: rgba(33, 40, 73, 0.8);
+
+$bg-color-light: #f7f6f2;
+$font-color: #7b7b90;
+$heading-color: #212849;
+$slider-background-gradient-left: rgba(33, 33, 33, 1);
+$slider-background-gradient-right: rgba(33, 33, 33, 0.5);
+$featured-single-gradient-top: rgba(33, 33, 33, 0);
+$featured-single-gradient-bottom: rgba(33, 33, 33, 1);
+
+// base
+$font-family-sans-serif: 'Roboto', sans-serif;
+$headings-font-family: 'Oswald', sans-serif;
+$headings-color: $heading-color;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1rem;
+$font-weight-base: 400;
+$line-height-base: 1.5;
+$body-color: $font-color;
+$link-hover-color: $color-accent;
+
+//navbar 
+$navbar-padding-y: 0;
+$nav-link-hover-color: $white;
+$nav-link--active-color: $white;
+
+// form 
+$form-label-font-size: clamp(1rem, #{"0.8989rem + 0.4492vw"}, 1.438rem);
+$form-label-color: $color-dark;
+$input-font-size:  .9rem;
+$input-padding-y: .5rem;
+$input-placeholder-color: $primary;
+$input-bg: $white;
+$input-border-width: 1px;
+$input-border-color: rgba($primary, .5); 
+$input-border-radius: 5px;
+$input-btn-padding-y-sm: 1rem;
+$input-focus-color: $body-color;
+$input-focus-bg: $white;
+$input-focus-border-color: $color-accent;
+$input-btn-focus-width: 1px;
+$input-btn-focus-box-shadow: none;

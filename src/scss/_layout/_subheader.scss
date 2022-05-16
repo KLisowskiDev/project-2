@@ -1,0 +1,53 @@
+.subheader {
+    background-color: $heading-color;
+    background-image: url('../images/subheader/subheader-2.jpg');
+    background-blend-mode: multiply;
+    background-position: top center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+        min-height: 300px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        min-height: 400px;
+    }
+
+    &__content {
+        z-index: 2;
+        margin: 0 auto;
+
+        @include media-breakpoint-up(lg) {
+            margin-left: 0;
+        }
+    }
+
+    &__title {
+        color: $white;
+        font-size: 2rem;
+        line-height: 1;
+        font-family: $headings-font-family;
+        text-transform: uppercase;
+
+        @include media-breakpoint-up(md) {
+            font-size: 3rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 5rem;
+        }
+    }
+
+    &__line {
+        content: '';
+        display: block;
+        background-color: $primary;
+        width: 80%;
+        margin: 2rem auto 0;
+        height: 0.5rem;
+    }
+}

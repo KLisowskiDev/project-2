@@ -1,0 +1,17 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 3vh;
+    right: 3vh;
+    width: 2.75rem;
+    height: 2.75rem;
+    color: $white;
+    cursor: pointer;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    &:hover {
+        background-color: $primary-light;
+    }
+}

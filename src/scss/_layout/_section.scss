@@ -1,0 +1,24 @@
+.section {
+    margin: 3rem 0;
+
+    @include media-breakpoint-up(md) {
+        margin: 5rem 0;
+    }
+
+    &--light {
+        background-color: $bg-color-light;
+    }
+
+    &--inner {
+        padding: 3rem 0;
+        
+        @include media-breakpoint-up(md) {
+            padding: 5rem 0;
+        }
+    }
+
+    &--first-row {
+        margin-bottom: 2rem;
+    }
+
+}

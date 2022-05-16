@@ -1,0 +1,152 @@
+.slider {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+        height: 840px;
+    }
+
+    .swiper-slide {
+        background-color: $heading-color;
+        background-blend-mode: multiply;
+        background-size: cover;
+
+        &--1 {
+            background-image: url('../images/slider/slider-10.jpg');
+
+        }
+
+        &--2 {
+            background-image: url('../images/slider/slider-9.jpg');
+        }
+
+        &--3 {
+            background-image: url('../images/slider/slider-8.jpg');
+        }
+
+        @include media-breakpoint-up(lg) {
+            &::after {
+                content: '';
+                background: linear-gradient(to right bottom, $primary, $primary-light);
+                height: 120%;
+                position: absolute;
+                right: -10%;
+                transform: skewX(-15deg);
+                width: 50%;
+                opacity: 0.3;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            text-align: left;
+        }
+
+        @include media-breakpoint-only(xs) {
+            font-size: 2rem;
+        }
+    }
+
+    &__text {
+        color: $white;
+        margin: 2rem 0;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & a:last-child {
+            margin-top: 1rem;
+        }
+
+        @include media-breakpoint-up(sm) {
+            flex-direction: row;
+            justify-content: center;
+
+            & a:last-child {
+                margin-top: 0;
+                margin-left: 2rem;
+            }
+        }
+
+        @include media-breakpoint-up(xl) {
+            justify-content: left;
+        }
+    }
+
+    &__row {
+        position: relative;
+        padding: 4rem 0;
+    }
+
+    &__thumbnail {
+        display: none;
+
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            display: block;
+            border-radius: 50%;
+            left: 60%;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 500px;
+            width: 500px;
+            z-index: 1;
+            padding: 0;
+            margin: 0;
+
+            &--1 {
+                background-image: url('../images/slider/o1.jpg');
+            }
+            
+            &--2 {
+                background-image: url('../images/slider/o2.jpg');
+            }
+            
+            &--3 {
+                background-image: url('../images/slider/o3.jpg');
+            }
+            
+
+            &::after {
+                content: '';
+                display: block;
+                border-radius: 50%;
+                border: 10px solid transparent;
+                background:linear-gradient(45deg,$primary, rgba(0, 0, 0, 0)) border-box;
+                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: destination-out;
+                mask-composite: exclude;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+        }
+    }
+
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        background: $primary;
+    }
+}

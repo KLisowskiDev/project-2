@@ -1,0 +1,39 @@
+.btn {
+    display: block;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 3rem;
+    width: 210px;
+    padding: 0;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+        line-height: 4rem;
+    }
+
+    &--primary {
+        color: $white;
+        background-color: $primary;
+        border: 2px solid $primary;
+
+        &:hover {
+            color: $primary;
+            border-color: $primary;
+            background-color: transparent;
+        }
+    }
+
+    &--white {
+        background-color: $white;
+        border: 1px solid $white;
+        border: 2px solid $white;
+
+        &:hover {
+            color: $white;
+            border-color: $white;
+            background-color: transparent;
+        }
+    }
+}
