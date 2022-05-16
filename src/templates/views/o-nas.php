@@ -1,3 +1,6 @@
+<?php
+?>
+
 <main>
     <section class="section--light about-us">
         <div class="container">
@@ -66,3 +69,6 @@
         </div>
     </section>
 </main>
+
+<?php
+?>
