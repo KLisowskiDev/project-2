@@ -1,3 +1,6 @@
+<?php
+?>
+
 <div class="subheader">
     <div class="container">
         <div class="row">
@@ -8,3 +11,6 @@
         </div>
     </div>
 </div>
+
+<?php
+?>

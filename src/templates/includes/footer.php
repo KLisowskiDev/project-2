@@ -1,3 +1,6 @@
+<?php
+?>
+
 <footer class="footer">
     <div class="container">
         <div class="row footer__informations justify-content-between">
@@ -59,3 +62,6 @@
         <i class="fas fa-chevron-up"></i>
     </div>
 </div>
+
+<?php
+?>

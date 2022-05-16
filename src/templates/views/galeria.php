@@ -1,3 +1,6 @@
+<?php
+?>
+
 <main>
     <section id="rowery-treningowe" class="gallery section--light">
         <div class="container">
@@ -78,3 +81,6 @@
         </div>
     </section>
 </main>
+
+<?php
+?>

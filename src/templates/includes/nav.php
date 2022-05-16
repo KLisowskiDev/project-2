@@ -1,3 +1,6 @@
+<?php
+?>
+
 <nav class="navbar navbar-expand-md" data-fixed-element="">
     <div class="navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
@@ -29,12 +32,10 @@
             </li>
         </ul>
     </div>
-    <button class="navbar-toggler d-inline d-md-none" type="button" data-bs-toggle="navbarNav" data-bs-target="#navbarNav">     
-        <!-- start classic hamburger -->  
+    <button class="navbar-toggler d-inline d-md-none" type="button" data-bs-toggle="navbarNav" data-bs-target="#navbarNav">      
         <i class="fas fa-bars navbar-toggler--icon"></i>
-        <!-- end classic hamburger --> 
-        <!-- start animated hamburger -->
-        <!-- <span></span> -->
-        <!-- end animated hamburger -->
     </button>
 </nav>
+
+<?php
+?>

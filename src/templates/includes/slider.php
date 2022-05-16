@@ -1,3 +1,6 @@
+<?php
+?>
+
 <div class="swiper slider">
     <div class="swiper-wrapper">
         <div class="swiper-slide swiper-slide--1">
@@ -80,3 +83,6 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
 </div>
+
+<?php
+?>

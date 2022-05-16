@@ -1,3 +1,6 @@
+<?php
+?>
+
 <main class="main">
 
     <section class="section exercise">
@@ -368,3 +371,6 @@
         </div>
     </section>
 </main>
+
+<?php
+?>

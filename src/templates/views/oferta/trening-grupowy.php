@@ -1,3 +1,6 @@
+<?php
+?>
+
 <main>
     <section class="section">
         <div class="container">
@@ -75,3 +78,6 @@
         </div>
     </section>
 </main>
+
+<?php
+?>
